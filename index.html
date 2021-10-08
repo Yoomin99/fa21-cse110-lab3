@@ -21,6 +21,148 @@
                 text-align: center;
                 font-family: "Lucida Console", monospace;
               }
+              
+              /*this CSS will apply styles only if your browser's viewport width is equal to or narrower
+               than 10000px */
+
+              @media (max-width: 10000px)
+              {
+                body{
+                  background-color: lightblue;
+                }
+              }
+
+              .box{
+                width: 700px;
+                height: 300px;
+                margin: 10px;
+                padding: 15px;
+                border: 5px white;
+                background-color: darkgray;
+              }
+
+              .container{
+                display: flex;
+                width: 450px;
+                height: 45px ;
+                flex-wrap:nowrap;
+                background-color: pink;
+                align-content:flex-start;
+                column-gap: 15px;
+              }
+
+              .item{
+                background: red;
+       
+                width: 30px;
+                height: 45px;
+                
+                color: white;
+                font-weight: bold;
+                font-size: 15px;
+                text-align: center;
+
+              }
+              
+              
+              /* visited link */
+              
+              a:visited {
+                color: black;
+
+              }
+
+              /* mouse over link */
+              @media (any-hover: hover){
+              a:hover {
+                color: hotpink;
+                background: yellow;
+              }
+            }
+              /* selected link */
+              a:active {
+                color: blue;
+
+              }
+              /* Each h1 is typed with brown color and upper case and aligned left*/
+              
+              h2{
+                /*1 relative unit and 1 absolute lengths */
+                position: relative;
+                background-color:cornflowerblue;
+                font-size: "1cm";
+                line-height: "1ex";
+                border: 2px solid black;
+                color:darkslateblue;
+                text-align: justify;
+                font-family: "Times New Roman", Times, serif;
+
+              }
+              /* Decorate <p> */
+              p.ex0{
+                display: block;
+                color:red;
+              }
+              /* Decorate <p> */
+              p.ex1 {
+                /*1 relative unit and 1 absolute lengths */
+                font-size: "5px";
+                line-height: 2em;
+                text-align: justify;
+                text-indent: 50px;
+                display: inline;
+                font-family: Lucida handwriting, cursive
+                
+
+              }
+              /* Decorate <p> */
+              p.ex2 {
+                margin: 10px 10px 10px 10px;
+                text-align: justify;
+                text-indent: 50px;
+                font-family: Lucida handwriting, cursive
+                
+              }
+              /* Decorate <p> */
+
+              p.ex3{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                margin-left: 10px;
+                text-align: justify;
+                text-indent: 50px;
+                font-family: Lucida handwriting, cursive
+              }
+              /* Decorate <p> */
+              p.ex4{
+                margin: auto; 
+                text-align:justify;
+                text-indent: 50px;
+                font-family: Lucida handwriting, cursive
+              }
+              /* Decorate <p> */
+              p.ex5 {
+                padding: 10px 10px 15px 10px;
+                border: 3px solid blueviolet;
+                text-align: justify;
+                text-indent: 50px;
+                font-family: Lucida handwriting, cursive
+                }
+
+              /* Decorate <p> */
+
+              p.ex6{
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border: 3px solid blueviolet;
+                text-align: justify;
+                font-family: Lucida handwriting, cursive;
+                text-indent: 50px;
+              }
+             
 
 
             </style>
@@ -33,7 +175,8 @@
             
             <h1>Meeting Minutes</h1>
             <h2>Call to order</h2>
-            <p>A meeting of CSE101 HW group was held at 
+            
+            <p class="ex1">A meeting of CSE101 HW group was held at </p>
                 <a href="https://www.google.com/maps/place/Geisel+Library/@32.881092,-117.2397546,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc07853cb13045:0x2d2f19f483aaaace!8m2!3d32.8810921!4d-117.2375495">
                     <b>the Geisel Library</b>
                 </a>
@@ -46,18 +189,18 @@
             <h2>Members not in attendence</h2>
             <ol> <li>James Ku</li> <li> Jessica cho</li> </ol>
             <h2> Agenda</h2>
-      <p> 
+      <p class="ex3"> 
       From today meeting, we will go over all questions together and make sure that all members agree with the answers. As all members agree all answers, then we will turn our work in the gradescope by Yoomin Oh
       </p>
       
       <h2> Things that were unfinished business from last meeting </h2>
-      <p>
+      <p class="ex2">
       Question 5 was not solved because all members have the different approach so <b>James</b> planned to go to the office hour to get help from TAs or professor. 
       </p>
       
      
       <h2> Things that are new business that need to be talked about </h2>
-      <p>
+      <p class="ex4">
       As <b> James </b> shared his idea with TAs's or professor's help, all members will share the thoughts and find the best answers for Question 5. As we finish working Queston 5, <b> Yoomin </b> will submit the work in the <em> gradescope </em>.
       </p>
       
@@ -72,20 +215,39 @@
         <source src="lab2.mp4" type="video/mp4">
         Your browser does not support HTML video.
       </video>
-      <p>
+      <p class="ex5">
         <b>James</b> went to the office hour and finally we all got the idea how to apprach the question 5 <br>
         <b>Yoomin</b> will submit our work before today
       </p>
       
       <h2> Announcements  </h2>
-      <p> 
+      <p class="ex6"> 
       Since the next homework would be released in 2 days, all members should catch all lectures up and be ready to work on the next homework in the next week
       </p>
+
+      <h2> Call me if you have any questions!</h2>
+      <div class ="container">
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+        <li class="item"> - </li>
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+        <li class="item"> - </li>
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+        <li class="item"> 9 </li>
+
+      </div>
+
+
       
      
       
       <h1> Please fill the form </h1>
-      <form action="/action_page.php" method ="get">
+      <form class="box" action="/action_page.php" method ="get">
         
         <fieldset>
         <label for="fname"> Frist name: </label>
