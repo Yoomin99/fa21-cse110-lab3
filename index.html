@@ -9,6 +9,18 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
             <style>
+
+              h1 {
+                /*1 relative unit and 1 absolute lengths */
+                position: relative;
+                text-align: left;
+                text-transform: uppercase;
+                color:burlywood;
+                font-size: "1in";
+                line-height: "2ch";
+                text-align: center;
+                font-family: "Lucida Console", monospace;
+              }
               
               /*this CSS will apply styles only if your browser's viewport width is equal to or narrower
                than 10000px */
@@ -73,18 +85,6 @@
 
               }
               /* Each h1 is typed with brown color and upper case and aligned left*/
-              h1 {
-                /*1 relative unit and 1 absolute lengths */
-                position: relative;
-                text-align: left;
-                text-transform: uppercase;
-                color:burlywood;
-                font-size: "1in";
-                line-height: "2ch";
-                text-align: center;
-                font-family: "Lucida Console", monospace;
-              }
-
               
               h2{
                 /*1 relative unit and 1 absolute lengths */
@@ -253,7 +253,7 @@
      
       
       <h1> Please fill the form </h1>
-      <form action="/action_page.php" method ="get">
+      <form class="box" action="/action_page.php" method ="get">
         
         <fieldset>
         <label for="fname"> Frist name: </label>
