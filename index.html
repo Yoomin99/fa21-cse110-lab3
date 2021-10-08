@@ -10,6 +10,13 @@
 
             <style>
               /* Each h1 is typed with brown color and upper case and aligned left*/
+              @media (max-width: 10000px)
+              {
+                body{
+                  background-color: lightblue;
+                }
+              }
+              
               .box{
                 width: 700px;
                 height: 300px;
@@ -44,16 +51,19 @@
               
               
               /* visited link */
+              
               a:visited {
                 color: black;
 
               }
 
               /* mouse over link */
+              @media (any-hover: hover){
               a:hover {
                 color: hotpink;
+                background: yellow;
               }
-
+            }
               /* selected link */
               a:active {
                 color: blue;
@@ -83,12 +93,12 @@
                 text-align: justify;
 
               }
-
+              /* Decorate <p> */
               p.ex0{
                 display: block;
                 color:red;
               }
-              
+              /* Decorate <p> */
               p.ex1 {
                 /*1 relative unit and 1 absolute lengths */
                 font-size: "5px";
@@ -99,12 +109,14 @@
                 
 
               }
+              /* Decorate <p> */
               p.ex2 {
                 margin: 10px 10px 10px 10px;
                 text-align: justify;
                 text-indent: 50px;
                 
               }
+              /* Decorate <p> */
 
               p.ex3{
                 margin-top: 10px;
@@ -114,19 +126,21 @@
                 text-align: justify;
                 text-indent: 50px;
               }
-
+              /* Decorate <p> */
               p.ex4{
                 margin: auto; 
                 text-align:justify;
                 text-indent: 50px;
               }
-
+              /* Decorate <p> */
               p.ex5 {
                 padding: 10px 10px 15px 10px;
                 border: 3px solid blueviolet;
                 text-align: justify;
                 text-indent: 50px;
                 }
+
+              /* Decorate <p> */
 
               p.ex6{
                 padding-top: 10px;
@@ -140,7 +154,7 @@
               
 
 
-
+              
 
 
               
@@ -220,6 +234,7 @@
         <li class="item"> 9 </li>
         <li class="item"> 9 </li>
         <li class="item"> 9 </li>
+
       </div>
 
 
