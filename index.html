@@ -84,6 +84,11 @@
                 color: blue;
 
               }
+              a[target=_blank]{
+                font-family: "Times New Roman", Times, serif;
+
+              }
+
               /* Each h1 is typed with brown color and upper case and aligned left*/
               
               h2{
@@ -111,7 +116,7 @@
                 text-align: justify;
                 text-indent: 50px;
                 display: inline;
-                font-family: Lucida handwriting, cursive
+               
                 
 
               }
@@ -120,7 +125,7 @@
                 margin: 10px 10px 10px 10px;
                 text-align: justify;
                 text-indent: 50px;
-                font-family: Lucida handwriting, cursive
+                
                 
               }
               /* Decorate <p> */
@@ -132,14 +137,14 @@
                 margin-left: 10px;
                 text-align: justify;
                 text-indent: 50px;
-                font-family: Lucida handwriting, cursive
+
               }
               /* Decorate <p> */
-              p.ex4{
+              #parah1{
                 margin: auto; 
                 text-align:justify;
                 text-indent: 50px;
-                font-family: Lucida handwriting, cursive
+
               }
               /* Decorate <p> */
               p.ex5 {
@@ -147,7 +152,7 @@
                 border: 3px solid blueviolet;
                 text-align: justify;
                 text-indent: 50px;
-                font-family: Lucida handwriting, cursive
+
                 }
 
               /* Decorate <p> */
@@ -159,17 +164,24 @@
                 padding-left: 10px;
                 border: 3px solid blueviolet;
                 text-align: justify;
-                font-family: Lucida handwriting, cursive;
                 text-indent: 50px;
+
               }
-              
+
+              /*Selector list*/
+              p.ex1, p.ex2, p.ex3, p.ex4, p.ex5, p.ex6 {  font-family: Lucida handwriting, cursive }
 
 
-              
+
+             /*Set back ground as white */
+             /*Universal selector */
+
+              * {
+                background-color: white;
+              }
 
 
-              
-
+            
 
             </style>
         </head>
@@ -180,10 +192,16 @@
             </div>
             
             <h1>Meeting Minutes</h1>
+            <audio controls="controls">
+              
+              <source src="lab2.mp3" type="audio/mpeg" display: inline;>
+              Your browser does not support the HTML5 audio element.
+      
+            </audio>
             <h2>Call to order</h2>
             
             <p class="ex1">A meeting of CSE101 HW group was held at </p>
-                <a href="https://www.google.com/maps/place/Geisel+Library/@32.881092,-117.2397546,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc07853cb13045:0x2d2f19f483aaaace!8m2!3d32.8810921!4d-117.2375495">
+                <a href="https://www.google.com/maps/place/Geisel+Library/@32.881092,-117.2397546,17z/data=!3m1!4b1!4m5!3m4!1s0x80dc07853cb13045:0x2d2f19f483aaaace!8m2!3d32.8810921!4d-117.2375495" target="_blank">
                     <b>the Geisel Library</b>
                 </a>
                 on 4/12/2045
@@ -206,19 +224,14 @@
       
      
       <h2> Things that are new business that need to be talked about </h2>
-      <p class="ex4">
+      <p id="parah1">
       As <b> James </b> shared his idea with TAs's or professor's help, all members will share the thoughts and find the best answers for Question 5. As we finish working Queston 5, <b> Yoomin </b> will submit the work in the <em> gradescope </em>.
       </p>
       
       <h2> Summary </h2>
-      <audio controls="controls">
-        <source src="lab2.mp3" type="audio/mpeg">
-        Your browser does not support the HTML5 audio element.
-
-      </audio>
 
       <video width="400" controls>
-        <source src="lab2.mp4" type="video/mp4">
+        <source src="lab2.mp4" type="video/mp4" height: 500px; width: 1000px>
         Your browser does not support HTML video.
       </video>
       <p class="ex5">
