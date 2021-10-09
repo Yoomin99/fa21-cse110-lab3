@@ -1,6 +1,6 @@
 # Standup Note on 10/10/2021 #
 
-## What did you accomplish yesterday? ##
+## What did you plan to accomplish yesterday? ##
 
 **Yesterday**, I just accomplish 13 things. 
 1. fonts
@@ -16,6 +16,23 @@
 1. Layouts
 1. Responsiveness
 1. Color
+
+## What did you actually accomplish yesterday? ##
+1. [x] fonts
+1. [x] comments
+1. [x] Background
+1. unit
+1. Box model
+1. [x] Text
+1. Display
+1. [x] Sizing
+1. Position
+1. [x] Pseudo-class
+1. [x] Layouts
+1. [x] Responsiveness
+1. [x] Color
+
+
 
 ## What do you plan to accomplish today?
 
